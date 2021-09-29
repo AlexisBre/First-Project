@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>e-shop</title>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="/home/bootstrap/dist/css/bootstrap.min.css">
+        <script src="/home/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div id="header" class="container">
+                <nav class="navbar">
+                    <ul class="nav">
+                        <img src="./integration-design-and-assets/Logo.png"></img>
+                        <li class="d-none d-sm-block" style="margin-left:40px;">HOME</li>
+                        <li class="d-none d-sm-block">SHOP</li>
+                        <li class="d-none d-sm-block">MAGAZINE</li>
+                    </ul>
+                    <ul class="nav navbar-right">
+                        <li id="bascket"></li>
+                        <li class="d-none d-sm-block">LOGIN</li>
+                        <li class="d-block d-sm-none">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="search" class="container">
+            <div class="row">
+                <img src="./integration-design-and-assets/Search.png" class="col-3 col-md-1" id="zoom"></img>
+                <div id="searchBar" class="col-md-8 col-9">
+                    <input type="text" placeholder="search..">
+                </div>
+                <div id="select" class="col-md-3">
+                    <select class="form-select d-none d-sm-block">
+                        <option selected>Best match</option>
+                        <option value="">test</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="container">  
+            <div id="content1" class="row">
+                <div id="filter by" class="col-md-3">
+                    <div id="select" class="card border-0">
+                        <div class="d-sm-block d-none">
+                            <p id="filter" class="col-sm-12">FILTER BY</p>
+                            <select class=form-select>
+                                <option selected>Collection</option>
+                                <option value="">test</option>
+                            </select>
+                            <select id="select" class=form-select>
+                                <option selected>Color</option>
+                                <option value="">test</option>
+                            </select>
+                            <select id="select" class=form-select>
+                                <option selected>Category</option>
+                                <option value="">test</option>
+                            </select>
+                    
+                            <div data-role="rangeslider">
+                                <p>Price Range</p>
+                                <label for="price-min">$0</label>
+                                <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                                <label for="price-max">$10,000+</label>
+                            </div>
+                        </div>
+                        <div class="d-block d-sm-none">
+                            <select class=form-select>
+                                <option selected>Best match</option>
+                                <option value="">test</option>
+                            </select>
+                            <select class="form-select">
+                                <optgroup label="FILTERS">
+                                    <option selected>Filters</option>
+                                </optgroup>
+                                <optgroup label="Collection">
+                                    <option>test</option>
+                                </optgroup>
+                                <optgroup label="Color">
+                                    <option>test</option>
+                                </optgroup>
+                                <optgroup label="Category">
+                                    <option>test</option>
+                                </optgroup>
+                                <optgroup label="Price Range">
+                                    <option>test</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="products" class="col-md-3">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Coombes.png">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5>Coombes</h5>
+                                <h6>LOUNGE</h6>
+                                <div id="stars">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star.png">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p id='price' style="float:right">$2,600</p>
+                                <p style="float:right" id="bascket"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="products" class="col-md-3">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Keeve-Set.png">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5>Keeve Set</h5>
+                                <h6>TABLE & CHAIRS</h6>
+                                <div id="stars">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star.png">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p style="float:right">$590</p>
+                                <p style="float:right" id="bascket"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="products" class="col-md-3">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Nillè.png">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5>Nillè</h5>
+                                <h6>ARMCHAIR</h6>
+                                <div id="stars">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p style="float:right">$950</p>
+                                <p style="float:right" id="bascket"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content2" class="row">
+                <div id="products" class="col-md-3">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Blanko.png">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5>Blanko</h5>
+                                <h6>SIDE TABLE</h6>
+                                <div id="stars">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star.png">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p style="float:right">$90</p>
+                                <p style="float:right" id="bascket"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="products" class="col-md-3">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Momo.png">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5>Momo</h5>
+                                <h6>SHELVES</h6>
+                                <div id="stars">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star.png">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p style="float:right">$890</p>
+                                <p style="float:right" id="bascket"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="products" class="col-md-3">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Penemillè.png">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5>Penemillè</h5>
+                                <h6>CHAIR</h6>
+                                <div id="stars">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star.png">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p style="float:right">$120</p>
+                                <p style="float:right" id="bascket"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="products" class="col-md-3">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Kappu.png">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5>Kappu</h5>
+                                <h6>SHELVES</h6>
+                                <div id="stars">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star-On.png">
+                                    <img src="/home/toutankharton/Desktop/Epitech/html/C-RDG-113-FR-1-2-integration-alexis1.breuil/Project1/integration-design-and-assets/Star.png">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p style="float:right">$2,600</p>
+                                <p style="float:right" id="bascket"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page" class="container">
+            <ul class="pagination">
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="#">5</a></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="#">6</a></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="#">7</a></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="#">8</a></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="#">9</a></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="#">10</a></li>
+                <li class="page-item"><a class="page-link" href="#">></a></li>
+            </ul> 
+        </div>
+        
+    </body>
+</html>
